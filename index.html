@@ -1,0 +1,1159 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portofolio Heza Septiawan - Retail Experience & Web3 Community Builder | Exploring Financial Markets & AI."
+    />
+    <meta name="author" content="Heza Septiawan" />
+    <title>Heza Septiawan</title>
+
+    <!-- Fonts: Space Grotesk & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="Icon" type="image" href="gambar/pp.webp" />
+
+    <!-- Memanggil CSS Lokal Hasil Build (Super Ringan & Tanpa CDN) -->
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="antialiased selection:bg-purple-500 selection:text-white">
+    <!-- Background Animated Blobs -->
+    <div
+      class="fixed inset-0 w-full h-full pointer-events-none z-[-1] overflow-hidden"
+    >
+      <div
+        class="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full mix-blend-screen filter blur-3xl opacity-50 animate-blob"
+      ></div>
+      <div
+        class="absolute top-0 right-1/4 w-96 h-96 bg-purple-500/20 rounded-full mix-blend-screen filter blur-3xl opacity-50 animate-blob animation-delay-2000"
+      ></div>
+      <div
+        class="absolute -bottom-32 left-1/2 w-96 h-96 bg-pink-500/20 rounded-full mix-blend-screen filter blur-3xl opacity-50 animate-blob animation-delay-4000"
+      ></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav
+      class="fixed w-full z-50 glass-card transition-all duration-300"
+      id="navbar"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <div class="flex-shrink-0">
+            <a
+              href="#"
+              class="font-heading font-bold text-2xl tracking-tighter"
+            >
+              Heza<span class="text-blue-500">.</span>
+            </a>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden lg:flex space-x-6 items-center">
+            <a
+              href="#about"
+              class="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+              >About</a
+            >
+            <a
+              href="#career"
+              class="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+              >Career</a
+            >
+            <a
+              href="#projects"
+              class="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+              >Web3</a
+            >
+            <a
+              href="#focus"
+              class="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+              >Focus</a
+            >
+            <a
+              href="#skills"
+              class="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+              >Skills</a
+            >
+            <a
+              href="#investments"
+              class="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+              >Investments</a
+            >
+            <a
+              href="#contact"
+              class="px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 text-sm font-medium transition-all"
+              >Let's Connect</a
+            >
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="lg:hidden flex items-center">
+            <button
+              id="mobile-menu-btn"
+              aria-label="Toggle Menu Navigasi"
+              class="text-gray-300 hover:text-white focus:outline-none p-2"
+            >
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path
+                  fill-rule="evenodd"
+                  d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Panel -->
+      <div
+        id="mobile-menu"
+        class="hidden lg:hidden glass-card border-t border-white/10 absolute w-full max-h-screen overflow-y-auto"
+      >
+        <div class="px-4 pt-2 pb-6 space-y-2">
+          <a
+            href="#about"
+            class="block px-3 py-3 rounded-lg text-base font-medium text-gray-300 hover:text-white hover:bg-white/5 mobile-link"
+            >About Me</a
+          >
+          <a
+            href="#career"
+            class="block px-3 py-3 rounded-lg text-base font-medium text-gray-300 hover:text-white hover:bg-white/5 mobile-link"
+            >Professional Career</a
+          >
+          <a
+            href="#projects"
+            class="block px-3 py-3 rounded-lg text-base font-medium text-gray-300 hover:text-white hover:bg-white/5 mobile-link"
+            >Web3 Projects</a
+          >
+          <a
+            href="#focus"
+            class="block px-3 py-3 rounded-lg text-base font-medium text-gray-300 hover:text-white hover:bg-white/5 mobile-link"
+            >Area of Focus</a
+          >
+          <a
+            href="#skills"
+            class="block px-3 py-3 rounded-lg text-base font-medium text-gray-300 hover:text-white hover:bg-white/5 mobile-link"
+            >Skills</a
+          >
+          <a
+            href="#investments"
+            class="block px-3 py-3 rounded-lg text-base font-medium text-gray-300 hover:text-white hover:bg-white/5 mobile-link"
+            >Investments</a
+          >
+          <a
+            href="#contact"
+            class="block px-3 py-3 rounded-lg text-base font-bold text-blue-400 hover:text-blue-300 hover:bg-white/5 mobile-link mt-4 border border-blue-500/30 text-center"
+            >Let's Connect</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- 1. Hero Section & Biodata -->
+      <section
+        id="about"
+        class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-screen"
+      >
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full"
+        >
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Text Content -->
+            <div class="order-2 lg:order-1 reveal">
+              <h1
+                class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4"
+              >
+                Hello, I am <br />
+                <span class="text-gradient">Heza Septiawan.</span>
+              </h1>
+
+              <h2 class="text-xl sm:text-2xl text-gray-300 font-medium mb-6">
+                Retail Experience & Web3 Community Builder | Exploring Financial
+                Markets & AI.
+              </h2>
+
+              <p class="text-gray-400 leading-relaxed mb-6 max-w-xl text-lg">
+                An Information Systems student with over 4 years of experience
+                in the cryptocurrency industry. Deeply interested in financial
+                markets, digital asset investments, and the advancement of
+                Artificial Intelligence.
+              </p>
+              <p class="text-gray-400 leading-relaxed mb-8 max-w-xl text-lg">
+                Experienced in building robust Web3 communities and
+                understanding retail operational dynamics. My main focus lies in
+                combining strategic market insights with the rapid adoption of
+                emerging technologies.
+              </p>
+
+              <div class="flex flex-wrap gap-4">
+                <a
+                  href="#projects"
+                  class="w-full sm:w-auto text-center px-8 py-3 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-medium transition-all shadow-lg shadow-blue-500/25"
+                >
+                  View Web3 Projects
+                </a>
+                <a
+                  href="#contact"
+                  class="w-full sm:w-auto text-center justify-center px-8 py-3 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-white font-medium transition-all flex items-center"
+                >
+                  Let's Connect
+                </a>
+              </div>
+            </div>
+
+            <!-- Visual Profile / Graphic -->
+            <div
+              class="order-1 lg:order-2 flex justify-center lg:justify-end reveal"
+            >
+              <div class="relative w-72 h-72 sm:w-96 sm:h-96">
+                <div
+                  class="absolute inset-0 rounded-3xl bg-gradient-to-tr from-blue-500 to-purple-500 rotate-6 opacity-50 blur-lg animate-pulse"
+                ></div>
+                <div
+                  class="absolute inset-0 rounded-3xl bg-slate-800 border border-white/10 overflow-hidden flex items-center justify-center relative shadow-2xl"
+                >
+                  <img
+                    src="gambar/pp.webp"
+                    alt="Heza Septiawan"
+                    fetchpriority="high"
+                    decoding="async"
+                    class="object-cover w-full h-full"
+                  />
+
+                  <div
+                    class="absolute -left-2 sm:-left-6 top-12 bg-slate-900 border border-white/10 px-4 py-2 rounded-xl flex items-center gap-2 shadow-xl animate-bounce"
+                    style="animation-duration: 3s"
+                  >
+                    <svg
+                      class="w-5 h-5 fill-current text-orange-400"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M23.638 14.904c-1.602 6.43-8.113 10.34-14.542 8.736C2.67 22.05-1.24 15.54.362 9.105 1.962 2.67 8.475-1.24 14.9.358c6.43 1.605 10.342 8.115 8.738 14.548v-.002zm-6.35-4.613c.24-1.59-.974-2.45-2.64-3.03l.54-2.153-1.315-.33-.525 2.107c-.345-.087-.705-.168-1.054-.25l.53-2.12-1.313-.326-.54 2.16c-.288-.068-.58-.137-.866-.207l.002-.009-1.815-.452-.35 1.407s.975.225.955.236c.535.136.63.486.615.766l-.615 2.46c.038.01.085.023.137.042l-.14-.035-.86 3.45c-.065.16-.228.396-.6.304.018.026-.956-.238-.956-.238l-.648 1.498 1.71.426c.318.078.63.158.938.236l-.545 2.19 1.312.328.54-2.165c.36.098.708.188 1.05.27l-.538 2.152 1.313.33.545-2.183c2.253.426 3.952.254 4.664-1.777.57-1.63-.03-2.57-1.21-3.18.86-.198 1.51-.762 1.68-1.93h.001zm-3.01 4.22c-.41 1.63-3.176.75-4.072.528l.727-2.915c.896.224 3.774.665 3.345 2.387zm.408-4.242c-.375 1.5-2.695.74-3.447.554l.662-2.653c.752.188 3.177.536 2.785 2.099z"
+                      />
+                    </svg>
+                    <span class="text-xs font-bold hidden sm:block"
+                      >Crypto</span
+                    >
+                  </div>
+                  <!-- Ikon Otak (Brain) di Hero Section -->
+                  <div
+                    class="absolute -right-2 sm:-right-6 bottom-12 bg-slate-900 border border-white/10 px-4 py-2 rounded-xl flex items-center gap-2 shadow-xl animate-bounce"
+                    style="animation-duration: 4s; animation-delay: 1s"
+                  >
+                    <svg
+                      class="w-5 h-5 stroke-current text-purple-400"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"
+                      />
+                      <path
+                        d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"
+                      />
+                      <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4" />
+                      <path d="M17.599 6.5a3 3 0 0 0 .399-1.375" />
+                      <path d="M6.002 6.5A3 3 0 0 1 5.603 5.125" />
+                      <path d="M19.228 14.882a1 1 0 0 1 .324 1" />
+                      <path d="M4.772 14.882a1 1 0 0 0-.324 1" />
+                    </svg>
+                    <span class="text-xs font-bold hidden sm:block"
+                      >AI Explorer</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Professional Career -->
+      <section
+        id="career"
+        class="py-20 relative bg-slate-900/30 border-y border-white/5"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16 reveal">
+            <h2
+              class="text-green-500 font-semibold tracking-wide uppercase text-sm mb-2"
+            >
+              Operational Experience
+            </h2>
+            <h3 class="font-heading text-3xl md:text-4xl font-bold">
+              Professional Career
+            </h3>
+            <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
+              Hands-on operational experience that shaped my work ethic,
+              adaptability, and deep understanding of consumer behavior.
+            </p>
+          </div>
+
+          <div class="max-w-4xl mx-auto">
+            <div
+              class="relative border-l border-gray-700 ml-4 md:ml-6 space-y-12"
+            >
+              <!-- Experience 1 -->
+              <div class="relative pl-8 md:pl-10 reveal">
+                <div
+                  class="absolute -left-2 top-4 w-4 h-4 rounded-full bg-green-500 border-4 border-slate-900"
+                ></div>
+                <div
+                  class="glass-card rounded-xl p-6 border-l-4 border-l-green-500 flex flex-col md:flex-row gap-5 items-start"
+                >
+                  <img
+                    src="gambar/logo.webp"
+                    alt="Shuyi Logo"
+                    loading="lazy"
+                    decoding="async"
+                    class="w-14 h-14 rounded-lg object-cover border border-white/10 shrink-0"
+                  />
+                  <div>
+                    <div class="flex flex-wrap items-center gap-3 mb-1">
+                      <h4 class="font-heading text-xl font-bold text-white">
+                        Shuyi Grass Jelly & Tea
+                      </h4>
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-500/20 text-green-400 border border-green-500/20"
+                        >Present</span
+                      >
+                    </div>
+                    <p
+                      class="text-gray-300 font-medium mb-2 text-sm md:text-base"
+                    >
+                      Store Crew / Operations
+                    </p>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                      Managing daily outlet operations, ensuring top-tier
+                      customer service, and maintaining strict product quality
+                      standards for consumer satisfaction.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Experience 2 -->
+              <div class="relative pl-8 md:pl-10 reveal">
+                <div
+                  class="absolute -left-2 top-2 w-4 h-4 rounded-full bg-gray-600 border-4 border-slate-900"
+                ></div>
+                <div class="flex flex-col sm:flex-row gap-4 items-start">
+                  <img
+                    src="gambar/k3mart.webp"
+                    alt="K3Mart Logo"
+                    loading="lazy"
+                    decoding="async"
+                    class="w-12 h-12 rounded-lg object-cover border border-white/10 shrink-0"
+                  />
+                  <div>
+                    <h4 class="font-heading text-lg font-bold text-white mb-1">
+                      K3Mart
+                    </h4>
+                    <p class="text-gray-300 text-sm font-medium mb-2">
+                      Store Crew / Operations
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Experience 3 -->
+              <div class="relative pl-8 md:pl-10 reveal">
+                <div
+                  class="absolute -left-2 top-2 w-4 h-4 rounded-full bg-gray-600 border-4 border-slate-900"
+                ></div>
+                <div class="flex flex-col sm:flex-row gap-4 items-start">
+                  <img
+                    src="gambar/izone.webp"
+                    alt="PT Mada Graha Logo"
+                    loading="lazy"
+                    decoding="async"
+                    class="w-12 h-12 rounded-lg object-cover border border-white/10 shrink-0"
+                  />
+                  <div>
+                    <h4 class="font-heading text-lg font-bold text-white mb-1">
+                      PT Mada Graha Nagata
+                    </h4>
+                    <p class="text-gray-300 text-sm font-medium">
+                      Operations Staff
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Experience 4 -->
+              <div class="relative pl-8 md:pl-10 reveal">
+                <div
+                  class="absolute -left-2 top-2 w-4 h-4 rounded-full bg-gray-600 border-4 border-slate-900"
+                ></div>
+                <div class="flex flex-col sm:flex-row gap-4 items-start">
+                  <img
+                    src="gambar/skj.webp"
+                    alt="PT Sinar Kreasi Logo"
+                    loading="lazy"
+                    decoding="async"
+                    class="w-12 h-12 rounded-lg object-cover border border-white/10 shrink-0"
+                  />
+                  <div>
+                    <h4 class="font-heading text-lg font-bold text-white mb-1">
+                      PT Sinar Kreasi Jaya
+                    </h4>
+                    <p class="text-gray-300 text-sm font-medium">
+                      Operations Staff
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Experience 5 -->
+              <div class="relative pl-8 md:pl-10 reveal">
+                <div
+                  class="absolute -left-2 top-2 w-4 h-4 rounded-full bg-gray-600 border-4 border-slate-900"
+                ></div>
+                <div class="flex flex-col sm:flex-row gap-4 items-start">
+                  <img
+                    src="gambar/aice.webp"
+                    alt="Aice Logo"
+                    loading="lazy"
+                    decoding="async"
+                    class="w-12 h-12 rounded-lg object-cover border border-white/10 shrink-0"
+                  />
+                  <div>
+                    <h4 class="font-heading text-lg font-bold text-white mb-1">
+                      Aice Indonesia
+                    </h4>
+                    <p class="text-gray-300 text-sm font-medium">
+                      Operations / Distribution
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Experience 6 -->
+              <div class="relative pl-8 md:pl-10 reveal">
+                <div
+                  class="absolute -left-2 top-2 w-4 h-4 rounded-full bg-gray-600 border-4 border-slate-900"
+                ></div>
+                <div class="flex flex-col sm:flex-row gap-4 items-start">
+                  <img
+                    src="https://placehold.co/100x100/1e293b/9ca3af?text=NA"
+                    alt="Grafi Advertising Logo"
+                    loading="lazy"
+                    decoding="async"
+                    class="w-12 h-12 rounded-lg object-cover border border-white/10 shrink-0"
+                  />
+                  <div>
+                    <h4 class="font-heading text-lg font-bold text-white mb-1">
+                      Grafi Advertising
+                    </h4>
+                    <p class="text-gray-300 text-sm font-medium mb-1">
+                      Operations Staff
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Web3 & Crypto Projects -->
+      <section id="projects" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16 reveal">
+            <div>
+              <h2
+                class="text-purple-500 font-semibold tracking-wide uppercase text-sm mb-2"
+              >
+                Portfolio
+              </h2>
+              <h3 class="font-heading text-3xl md:text-4xl font-bold">
+                Web3 & Crypto Projects
+              </h3>
+            </div>
+            <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
+              Active involvement in managing, moderating, and growing various
+              projects within the Web3 and DeFi ecosystems.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Project 1 -->
+            <div
+              class="glass-card rounded-2xl p-6 lg:p-8 hover:bg-slate-800/80 transition-all hover:-translate-y-1 group reveal"
+            >
+              <div class="flex items-center gap-4 mb-5">
+                <img
+                  src="gambar/zephyr.webp"
+                  alt="Zephyr Protocol Logo"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-12 h-12 rounded-full border border-white/10 shadow-lg"
+                />
+                <div>
+                  <h4
+                    class="font-heading text-xl font-bold text-white group-hover:text-blue-400 transition-colors"
+                  >
+                    Zephyr Protocol
+                  </h4>
+                  <p class="text-blue-500 text-sm font-medium mt-0.5">
+                    Web3 Community Builder
+                  </p>
+                </div>
+              </div>
+              <p class="text-gray-400 text-sm leading-relaxed">
+                Developed organic community growth strategies on Discord and
+                Telegram. Successfully engineered initiatives to significantly
+                boost engagement since the project's early launch phase.
+              </p>
+            </div>
+
+            <!-- Project 2 -->
+            <div
+              class="glass-card rounded-2xl p-6 lg:p-8 hover:bg-slate-800/80 transition-all hover:-translate-y-1 group reveal delay-100"
+            >
+              <div class="flex items-center gap-4 mb-5">
+                <img
+                  src="gambar/nexus.webp"
+                  alt="Nexus Chain Logo"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-12 h-12 rounded-full border border-white/10 shadow-lg"
+                />
+                <div>
+                  <h4
+                    class="font-heading text-xl font-bold text-white group-hover:text-purple-400 transition-colors"
+                  >
+                    Nexus Chain Initiative
+                  </h4>
+                  <p class="text-purple-500 text-sm font-medium mt-0.5">
+                    Brand Ambassador
+                  </p>
+                </div>
+              </div>
+              <p class="text-gray-400 text-sm leading-relaxed">
+                Educated the local market on the benefits and utilities of
+                layer-2 technology. Translated technical documentation into
+                user-friendly language and routinely facilitated AMA sessions.
+              </p>
+            </div>
+
+            <!-- Project 3 -->
+            <div
+              class="glass-card rounded-2xl p-6 lg:p-8 hover:bg-slate-800/80 transition-all hover:-translate-y-1 group reveal"
+            >
+              <div class="flex items-center gap-4 mb-5">
+                <img
+                  src="gambar/aether.webp"
+                  alt="Aether DAO Logo"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-12 h-12 rounded-full border border-white/10 shadow-lg"
+                />
+                <div>
+                  <h4
+                    class="font-heading text-xl font-bold text-white group-hover:text-pink-400 transition-colors"
+                  >
+                    Aether DAO
+                  </h4>
+                  <p class="text-pink-500 text-sm font-medium mt-0.5">
+                    Community Moderator
+                  </p>
+                </div>
+              </div>
+              <p class="text-gray-400 text-sm leading-relaxed">
+                Maintained a positive and constructive communication flow within
+                the DAO. Managed community feedback, resolved member conflicts,
+                and supported the governance voting process.
+              </p>
+            </div>
+
+            <!-- Project 4 -->
+            <div
+              class="glass-card rounded-2xl p-6 lg:p-8 hover:bg-slate-800/80 transition-all hover:-translate-y-1 group reveal delay-100"
+            >
+              <div class="flex items-center gap-4 mb-5">
+                <img
+                  src="gambar/voxel.webp"
+                  alt="Voxel Finance Logo"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-12 h-12 rounded-full border border-white/10 shadow-lg"
+                />
+                <div>
+                  <h4
+                    class="font-heading text-xl font-bold text-white group-hover:text-orange-400 transition-colors"
+                  >
+                    Voxel Finance
+                  </h4>
+                  <p class="text-orange-500 text-sm font-medium mt-0.5">
+                    Community Moderator
+                  </p>
+                </div>
+              </div>
+              <p class="text-gray-400 text-sm leading-relaxed">
+                Designed and executed incentive campaigns and educational
+                airdrop programs aimed at attracting early liquidity providers
+                and driving massive user onboarding into the DeFi protocol.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Area of Focus -->
+      <section
+        id="focus"
+        class="py-20 relative bg-slate-900/30 border-y border-white/5"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16 reveal">
+            <h2
+              class="text-blue-500 font-semibold tracking-wide uppercase text-sm mb-2"
+            >
+              Core Value
+            </h2>
+            <h3 class="font-heading text-3xl md:text-4xl font-bold">
+              Area of Focus
+            </h3>
+            <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
+              My main interests are divided into three pillars of future
+              technology and finance.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div
+              class="glass-card rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-300 reveal"
+            >
+              <div
+                class="w-14 h-14 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center text-2xl mb-6"
+              >
+                <svg
+                  class="w-7 h-7 fill-none stroke-current"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"
+                  />
+                </svg>
+              </div>
+              <h4 class="font-heading text-xl font-bold mb-3">
+                Financial Markets & Crypto
+              </h4>
+              <p class="text-gray-400 text-sm leading-relaxed">
+                In-depth market analysis, formulation of measurable investment
+                strategies, and comprehensive understanding of the Bitcoin
+                ecosystem and other digital assets.
+              </p>
+            </div>
+
+            <div
+              class="glass-card rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-300 reveal delay-100"
+            >
+              <div
+                class="w-14 h-14 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-2xl mb-6"
+              >
+                <svg
+                  class="w-7 h-7 fill-none stroke-current"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"
+                  />
+                </svg>
+              </div>
+              <h4 class="font-heading text-xl font-bold mb-3">
+                Web3 & Community Building
+              </h4>
+              <p class="text-gray-400 text-sm leading-relaxed">
+                Fostering organic community growth, acting as a Brand
+                Ambassador, and actively managing decentralized ecosystems
+                (DAOs).
+              </p>
+            </div>
+
+            <!-- Ikon Otak (Brain) di Area of Focus -->
+            <div
+              class="glass-card rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-300 reveal delay-200"
+            >
+              <div
+                class="w-14 h-14 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6"
+              >
+                <svg
+                  class="w-7 h-7 stroke-current text-purple-400"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"
+                  />
+                  <path
+                    d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"
+                  />
+                  <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4" />
+                  <path d="M17.599 6.5a3 3 0 0 0 .399-1.375" />
+                  <path d="M6.002 6.5A3 3 0 0 1 5.603 5.125" />
+                  <path d="M19.228 14.882a1 1 0 0 1 .324 1" />
+                  <path d="M4.772 14.882a1 1 0 0 0-.324 1" />
+                </svg>
+              </div>
+              <h4 class="font-heading text-xl font-bold mb-3">
+                Artificial Intelligence
+              </h4>
+              <p class="text-gray-400 text-sm leading-relaxed">
+                Exploring the implementation of AI for operational efficiency
+                and data analysis, integrating knowledge from my Information
+                Systems background.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Skills & Competencies -->
+      <section id="skills" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16 reveal">
+            <h2
+              class="text-red-500 font-semibold tracking-wide uppercase text-sm mb-2"
+            >
+              Capabilities
+            </h2>
+            <h3 class="font-heading text-3xl md:text-4xl font-bold">
+              Skills & Competencies
+            </h3>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+            <div class="glass-card p-8 rounded-2xl reveal">
+              <h3
+                class="font-heading text-2xl font-bold mb-6 flex items-center gap-3"
+              >
+                <svg
+                  class="w-6 h-6 fill-none stroke-current text-blue-500"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"
+                  />
+                </svg>
+                Crypto / Web3
+              </h3>
+              <div class="flex flex-wrap gap-3">
+                <span
+                  class="px-4 py-2 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-300 text-sm font-medium"
+                  >Market Analysis</span
+                >
+                <span
+                  class="px-4 py-2 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-300 text-sm font-medium"
+                  >Community Management</span
+                >
+                <span
+                  class="px-4 py-2 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-300 text-sm font-medium"
+                  >DeFi Concepts</span
+                >
+                <span
+                  class="px-4 py-2 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-300 text-sm font-medium"
+                  >DAO Governance</span
+                >
+                <span
+                  class="px-4 py-2 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-300 text-sm font-medium"
+                  >Tokenomics Basic</span
+                >
+                <span
+                  class="px-4 py-2 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-300 text-sm font-medium"
+                  >Discord & Telegram Growth</span
+                >
+              </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-2xl reveal delay-100">
+              <h3
+                class="font-heading text-2xl font-bold mb-6 flex items-center gap-3"
+              >
+                <svg
+                  class="w-6 h-6 fill-none stroke-current text-purple-500"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                  />
+                </svg>
+                General / Tech
+              </h3>
+              <div class="flex flex-wrap gap-3">
+                <span
+                  class="px-4 py-2 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm font-medium"
+                  >Operational Efficiency</span
+                >
+                <span
+                  class="px-4 py-2 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm font-medium"
+                  >Customer Engagement</span
+                >
+                <span
+                  class="px-4 py-2 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm font-medium"
+                  >System Analysis</span
+                >
+                <span
+                  class="px-4 py-2 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm font-medium"
+                  >Data Collection</span
+                >
+                <span
+                  class="px-4 py-2 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm font-medium"
+                  >AI Tools Exploration</span
+                >
+                <span
+                  class="px-4 py-2 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm font-medium"
+                  >Problem Solving</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Investments -->
+      <section
+        id="investments"
+        class="py-20 relative bg-slate-900/50 border-t border-white/5"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16 reveal">
+            <h2
+              class="text-yellow-500 font-semibold tracking-wide uppercase text-sm mb-2"
+            >
+              Portfolio Assets
+            </h2>
+            <h3 class="font-heading text-3xl md:text-4xl font-bold">
+              What I Invest In
+            </h3>
+            <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
+              Strategic allocations in high-conviction digital assets, focusing
+              on long-term value and technological innovation.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div
+              class="glass-card rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-300 reveal flex flex-col items-center text-center border-t-4 border-t-orange-500 relative overflow-hidden group"
+            >
+              <div
+                class="absolute inset-0 bg-orange-500/5 opacity-0 group-hover:opacity-100 transition-opacity"
+              ></div>
+              <div
+                class="w-20 h-20 rounded-full bg-orange-500/10 text-orange-500 flex items-center justify-center text-4xl mb-5 shadow-[0_0_20px_rgba(249,115,22,0.15)] relative z-10"
+              >
+                <svg
+                  class="w-10 h-10 fill-current text-orange-500"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M23.638 14.904c-1.602 6.43-8.113 10.34-14.542 8.736C2.67 22.05-1.24 15.54.362 9.105 1.962 2.67 8.475-1.24 14.9.358c6.43 1.605 10.342 8.115 8.738 14.548v-.002zm-6.35-4.613c.24-1.59-.974-2.45-2.64-3.03l.54-2.153-1.315-.33-.525 2.107c-.345-.087-.705-.168-1.054-.25l.53-2.12-1.313-.326-.54 2.16c-.288-.068-.58-.137-.866-.207l.002-.009-1.815-.452-.35 1.407s.975.225.955.236c.535.136.63.486.615.766l-.615 2.46c.038.01.085.023.137.042l-.14-.035-.86 3.45c-.065.16-.228.396-.6.304.018.026-.956-.238-.956-.238l-.648 1.498 1.71.426c.318.078.63.158.938.236l-.545 2.19 1.312.328.54-2.165c.36.098.708.188 1.05.27l-.538 2.152 1.313.33.545-2.183c2.253.426 3.952.254 4.664-1.777.57-1.63-.03-2.57-1.21-3.18.86-.198 1.51-.762 1.68-1.93h.001zm-3.01 4.22c-.41 1.63-3.176.75-4.072.528l.727-2.915c.896.224 3.774.665 3.345 2.387zm.408-4.242c-.375 1.5-2.695.74-3.447.554l.662-2.653c.752.188 3.177.536 2.785 2.099z"
+                  />
+                </svg>
+              </div>
+              <h4 class="font-heading text-2xl font-bold mb-2 relative z-10">
+                Bitcoin <span class="text-orange-500 text-lg">BTC</span>
+              </h4>
+              <span
+                class="text-xs font-semibold px-3 py-1 bg-slate-800 border border-white/5 text-gray-300 rounded-full mb-4 relative z-10"
+                >Digital Gold & Macro Hedge</span
+              >
+              <p class="text-gray-400 text-sm leading-relaxed relative z-10">
+                The ultimate digital store of value. My primary focus for
+                long-term wealth preservation and a strategic hedge against
+                macroeconomic shifts.
+              </p>
+            </div>
+
+            <div
+              class="glass-card rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-300 reveal delay-100 flex flex-col items-center text-center border-t-4 border-t-blue-500 relative overflow-hidden group"
+            >
+              <div
+                class="absolute inset-0 bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity"
+              ></div>
+              <div
+                class="w-20 h-20 rounded-full bg-blue-500/10 text-blue-400 flex items-center justify-center text-4xl mb-5 shadow-[0_0_20px_rgba(59,130,246,0.15)] relative z-10"
+              >
+                <svg
+                  class="w-10 h-10 fill-current text-blue-400"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.944 17.97L4.58 13.62 11.943 24l7.37-10.38-7.372 4.35h.003zM12.056 0L4.69 12.223l7.365 4.354 7.365-4.35L12.056 0z"
+                  />
+                </svg>
+              </div>
+              <h4 class="font-heading text-2xl font-bold mb-2 relative z-10">
+                Ethereum <span class="text-blue-500 text-lg">ETH</span>
+              </h4>
+              <span
+                class="text-xs font-semibold px-3 py-1 bg-slate-800 border border-white/5 text-gray-300 rounded-full mb-4 relative z-10"
+                >Web3 Infrastructure</span
+              >
+              <p class="text-gray-400 text-sm leading-relaxed relative z-10">
+                The pioneer of smart contracts. Investing in the foundational
+                layer that powers the majority of DeFi protocols and digital
+                economies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 7. Footer / Contact -->
+    <footer
+      id="contact"
+      class="py-16 relative border-t border-white/10 bg-slate-900/80"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
+        <h2 class="font-heading text-3xl md:text-4xl font-bold mb-6">
+          Let's Connect
+        </h2>
+        <p class="text-gray-400 max-w-lg mx-auto mb-10 text-lg">
+          Always open to discussing Web3 innovations, cryptocurrency market
+          analysis, AI technologies, or professional collaboration
+          opportunities.
+        </p>
+
+        <div class="flex justify-center items-center gap-6 mb-12">
+          <!-- Email (Hover Merah Gmail #EA4335) -->
+          <a
+            href="#"
+            data-user="hezaseptiawan923"
+            data-domain="gmail.com"
+            aria-label="Kirim Email ke Heza"
+            class="w-14 h-14 rounded-full bg-white/5 border border-white/10 hover:bg-[#EA4335] flex items-center justify-center text-xl text-gray-300 hover:text-white transition-all hover:-translate-y-1 hover:border-[#EA4335] email-link"
+            title="Email"
+          >
+            <svg
+              class="w-6 h-6 fill-none stroke-current"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+              />
+            </svg>
+          </a>
+          <!-- LinkedIn (Hover Biru LinkedIn #0A66C2) -->
+          <a
+            href="https://www.linkedin.com/in/hezaseptiawan/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Profil LinkedIn Heza"
+            class="w-14 h-14 rounded-full bg-white/5 border border-white/10 hover:bg-[#0A66C2] flex items-center justify-center text-xl text-gray-300 hover:text-white transition-all hover:-translate-y-1 hover:border-[#0A66C2]"
+            title="LinkedIn"
+          >
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+              />
+            </svg>
+          </a>
+          <!-- Instagram (Hover Magenta Instagram #E1306C) -->
+          <a
+            href="https://www.instagram.com/zeth23_/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Profil Instagram Heza"
+            class="w-14 h-14 rounded-full bg-white/5 border border-white/10 hover:bg-[#E1306C] flex items-center justify-center text-xl text-gray-300 hover:text-white transition-all hover:-translate-y-1 hover:border-[#E1306C]"
+            title="Instagram"
+          >
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+              />
+            </svg>
+          </a>
+          <!-- WhatsApp (Hover Hijau WhatsApp #25D366) -->
+          <a
+            href="https://wa.me/6282286655636"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Chat WhatsApp Heza"
+            class="w-14 h-14 rounded-full bg-white/5 border border-white/10 hover:bg-[#25D366] flex items-center justify-center text-xl text-gray-300 hover:text-white transition-all hover:-translate-y-1 hover:border-[#25D366]"
+            title="Whatsapp"
+          >
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div
+          class="text-sm text-gray-500 font-medium border-t border-white/5 pt-8"
+        >
+          &copy; <span id="year"></span> Heza Septiawan.
+        </div>
+      </div>
+
+      <!-- Toast Notification -->
+      <div
+        id="toast"
+        class="fixed bottom-5 right-5 transform translate-y-20 opacity-0 transition-all duration-300 bg-green-500 text-white px-6 py-3 rounded-lg shadow-xl z-50 flex items-center gap-3 font-medium"
+      >
+        <svg
+          class="w-5 h-5 fill-none stroke-current"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+          />
+        </svg>
+        <span id="toast-message">Copied to clipboard!</span>
+      </div>
+    </footer>
+
+    <!-- JavaScript for Interactions -->
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const btn = document.getElementById("mobile-menu-btn");
+      const menu = document.getElementById("mobile-menu");
+      const mobileLinks = document.querySelectorAll(".mobile-link");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          menu.classList.add("hidden");
+        });
+      });
+
+      const navbar = document.getElementById("navbar");
+      let isScrolled = false;
+
+      window.addEventListener(
+        "scroll",
+        () => {
+          const shouldBeScrolled = window.scrollY > 10;
+          if (shouldBeScrolled !== isScrolled) {
+            isScrolled = shouldBeScrolled;
+            if (isScrolled) {
+              navbar.classList.add(
+                "shadow-lg",
+                "bg-slate-900/95",
+                "backdrop-blur-md",
+              );
+              navbar.classList.remove("bg-transparent");
+            } else {
+              navbar.classList.remove(
+                "shadow-lg",
+                "bg-slate-900/95",
+                "backdrop-blur-md",
+              );
+              navbar.classList.add("bg-transparent");
+            }
+          }
+        },
+        { passive: true },
+      );
+
+      const revealElements = document.querySelectorAll(".reveal");
+
+      const revealCallback = (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+            observer.unobserve(entry.target);
+          }
+        });
+      };
+
+      const revealOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const revealObserver = new IntersectionObserver(
+        revealCallback,
+        revealOptions,
+      );
+
+      revealElements.forEach((el) => {
+        revealObserver.observe(el);
+      });
+
+      // Keamanan Email: Hanya menyalin email ke clipboard (tanpa membuka aplikasi email)
+      const emailBtn = document.querySelector(".email-link");
+      if (emailBtn) {
+        emailBtn.addEventListener("click", function (e) {
+          e.preventDefault();
+          const user = this.getAttribute("data-user");
+          const domain = this.getAttribute("data-domain");
+          const fullEmail = `${user}@${domain}`;
+
+          const textarea = document.createElement("textarea");
+          textarea.value = fullEmail;
+          document.body.appendChild(textarea);
+          textarea.select();
+
+          try {
+            document.execCommand("copy");
+            showToast(`Email ${fullEmail} copied!`);
+          } catch (err) {
+            console.error("Failed to copy", err);
+          }
+
+          document.body.removeChild(textarea);
+        });
+      }
+
+      function showToast(message) {
+        const toast = document.getElementById("toast");
+        const toastMessage = document.getElementById("toast-message");
+
+        toastMessage.textContent = message;
+        toast.classList.remove("translate-y-20", "opacity-0");
+
+        setTimeout(() => {
+          toast.classList.add("translate-y-20", "opacity-0");
+        }, 3000);
+      }
+    </script>
+  </body>
+</html>
